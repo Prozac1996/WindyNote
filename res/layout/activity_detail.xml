@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+            android:id="@+id/et_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:hint="题目" />
+
+    <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:id="@+id/et_detail_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="填写你的笔记内容....."
+    />
+
+</LinearLayout>

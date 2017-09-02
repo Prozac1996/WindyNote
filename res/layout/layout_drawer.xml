@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:clickable="true">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+    </ImageView>
+
+    <TextView android:text="分组"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:id="@+id/category_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+        <TextView
+                android:textSize="30sp"
+                android:text="所有笔记"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:src="@drawable/right_arrow"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/drawer_list_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <Button android:id="@+id/drawer_btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:text="增加"/>
+
+</LinearLayout>
